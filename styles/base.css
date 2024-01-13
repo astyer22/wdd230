@@ -4,7 +4,7 @@
 /* header */
 header {
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     align-items: center; /* Center items horizontally */
     background-color: darkgray;
     border: 1px solid #000;
@@ -12,6 +12,9 @@ header {
 
 #profile-img {
     margin-top: 20px; /* Add padding above the profile image */
+    margin-bottom: 20px;
+    margin-left: 555px;
+    margin-right: 20px;
 }
 
 /* Nav */
