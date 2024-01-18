@@ -10,10 +10,14 @@ header {
     border: 1px solid #000;
 }
 
-#profile-img {
-        margin: 0 auto;
-    }
+header h1{
+    margin-bottom: 20px; /* Add a bottom margin to create a collapsing effect */
+}
 
+#profile-img {
+    margin: 0 auto
+
+}
 /* Nav */
 nav {
     display: flex;
