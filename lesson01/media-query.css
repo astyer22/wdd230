@@ -1,0 +1,12 @@
+header {
+    background-color: black;
+    color: white;
+}
+
+/* Media query for viewport width 500px or greater */
+@media screen and (min-width: 500px) {
+    /* Add your styles specific to a viewport width of 500px or greater here */
+
+body {
+        background-color: lightgray; 
+    }
