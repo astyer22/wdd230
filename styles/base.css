@@ -8,10 +8,13 @@ header {
     align-items: center; /* Center items horizontally */
     background-color: darkgray;
     border: 1px solid #000;
+    
 }
 
 header h1{
     margin-bottom: 20px; /* Add a bottom margin to create a collapsing effect */
+    display: flex;
+    justify-content: center ;
 }
 
 #profile-img {
@@ -25,7 +28,6 @@ nav {
     background-color: goldenrod;
     border-top: 1px solid;
     padding: 10px;
-    
     
 }
 
