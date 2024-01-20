@@ -1,12 +1,28 @@
 header {
-    background-color: black;
-    color: white;
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #000;
+    background-color: rgb(92, 167, 252);
 }
 
-/* Media query for viewport width 500px or greater */
-@media screen and (min-width: 500px) {
-    /* Add your styles specific to a viewport width of 500px or greater here */
+main{
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #000;
+    background-color: rgb(92, 167, 252);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
 
-body {
-        background-color: lightgray; 
-    }
+footer{
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #000;
+    background-color: rgb(92, 167, 252);
+}
+
+section {
+    padding: 1rem; 
+    background-color: white;
+}
