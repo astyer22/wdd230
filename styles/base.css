@@ -3,22 +3,24 @@
 
 /* header */
 header {
-    display: flex;
-    flex-direction: row; 
-    align-items: center; /* Center items horizontally */
     background-color: darkgray;
     border: 1px solid #000;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
 }
 
 header h1{
-    margin-bottom: 20px; /* Add a bottom margin to create a collapsing effect */
-    display: flex;
-    justify-content: center ;
+   margin: 0;
+   margin-left: 10px;
 }
 
 #profile-img {
-    margin: 0 auto
+    justify-self: end;
+    
 
 }
 /* Nav */
