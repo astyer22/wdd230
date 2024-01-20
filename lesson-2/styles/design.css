@@ -9,7 +9,7 @@ footer {
 	margin: 0 auto;
 }
 
-marquee {
+.banner {
 	padding: 1rem;
 	background-color: #eee;
 }
@@ -20,21 +20,24 @@ h1 {
 
 main {
 	display: grid;
+	grid-template-columns: 1fr, 1fr;
 }
 
 h2 {
 	color: navy;
 	text-align: left;
     grid-column: span 2; /* Make the heading span two columns */
-    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */}
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+}
+
 article p {
 	text-align: justify;
 }
 
 .callout {
-	color: #777;
-	background-color: #702963;
-    padding: 10px 
+	color: #ffd22e;
+	background-color: #4f4a5e;
+    padding: 10px; 
 }
 
 footer {
