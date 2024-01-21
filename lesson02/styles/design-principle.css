@@ -1,0 +1,28 @@
+body {
+    background-color: bisque;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+p {
+    background-color: rgb(139, 168, 192);
+    border: solid;
+    border-radius: 10px;
+}
+
+h2 {
+    background-color: rgb(136, 129, 139);
+}
+
+section {
+    border: solid 1px;
+    padding: 30px;
+    align-items: center;
+}
+
+/* Remove the grid-column property for .visual-hierarchy */
+.visual-hierarchy {
+    /* Adjust specific styles for the second card */
+}
