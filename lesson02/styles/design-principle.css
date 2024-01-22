@@ -20,6 +20,7 @@ section {
     border: solid 1px;
     padding: 30px;
     align-items: center;
+    background-color: rgb(164, 170, 166);
 }
 
 /* Remove the grid-column property for .visual-hierarchy */
