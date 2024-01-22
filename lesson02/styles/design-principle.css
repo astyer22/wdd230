@@ -16,6 +16,15 @@ h2 {
     background-color: rgb(136, 129, 139);
 }
 
+a{
+    color:rgb(0, 0, 0);
+}
+
+a:hover{
+    color: white;
+    background-color: blue;
+}
+
 section {
     border: solid 1px;
     padding: 30px;
