@@ -24,6 +24,7 @@ header h1{
 
 }
 /* Nav */
+
 nav {
     display: flex;
     flex-direction: column;
@@ -46,6 +47,25 @@ nav a:hover{
     background-color: #0e192e;
     color: white;
 }
+
+/* menu bar */
+
+ #menu {
+		background-color: brown;
+		color: white;
+		border: none;
+		padding: 10px;
+		cursor: pointer;
+}
+#menu::before {
+	content: "☰";
+	color: black
+}
+
+#menu.open::before {
+	content: "🐤";
+}
+
 
 
 body {
@@ -100,3 +120,9 @@ main h2{
 footer{
     text-align: center;
 }
+
+/*}Navigation  */
+.navigation {
+  display: none;
+}
+
