@@ -3,59 +3,64 @@
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #9e9e9e ;
-  --secondary-color: #A01313;
-  --accent1-color: #167A1D;
-  --accent2-color: black;
+  --primary-color: #03556e ;
+  --secondary-color: #d4a300;
+  --accent1-color: white;
+  --accent2-color: #F0F3BD;
 
   /* change the values below to your chosen font(s) */
   --heading-font: 'Josefin Sans', sans-serif;
   --paragraph-font: 'Kanit', sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #ECA4003;  /* headlines on a white background */ 
-  --headline-color-on-color: #2D2D2A; /* headlines on a colored background */ 
+  --headline-color-on-white: #black;  /* headlines on a white background */ 
+  --headline-color-on-color: #d4a300; /* headlines on a colored background */ 
   --paragraph-color-on-white: black; /* paragraph text on a white background */ 
   --paragraph-color-on-color: black; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #738276  ;
-  --nav-link-color: blue;
-  --nav-background-color: #167A1D;  
+  --paragraph-background-color: #03556e  ;
+  --nav-link-color: orange;
+  --nav-background-color: black;  
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #738276;
+  --nav-hover-background-color: #03556e;
 }
 
 
 body {
-  background-color: #9e9e9e;
-  color: black(230, 230, 230);
+  background-color: #03556e;
+  color: #F0F3BD;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   font-size: larger;
 }
 
 h1 {
-  color: rgb(160, 19, 19);
+  color: #f5bd08;
   grid-column: 2/3;
   text-align: center;
   border-bottom: 2px solid var(--accent1-color);
 }
 
 h2 {
-  color: rgb(156, 24, 24);
+  color: #f5bd08;
   grid-column: 2/3;
   text-align: center;
 }
 
 h3{
-  color: #167A1D
+  color: White
 }
 
 h4 {
-  background: white
+  background: black
 }
 
 a{ 
-  color: white
+  color: black
+}
+
+.style-guide a:hover {
+  background-color: black;
+  color: white;
 }
 
 .site-name {
@@ -95,10 +100,10 @@ section {
     min-width: 350px;
     margin: 30px auto;
     text-align: center;
-    border: solid #167A1D 5px;
+    border: solid #f5bd08 5px;
   }
   .colors th {
-    background-color: #ffffff;
+    background-color: black;
   }
   .colors td{
     width: 25%;
@@ -121,6 +126,6 @@ section {
     color: var(--paragraph-color-on-color);
   }
   .hex {
-    color:white;
+    color:black;
   }
 
