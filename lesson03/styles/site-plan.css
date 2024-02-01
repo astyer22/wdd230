@@ -3,10 +3,10 @@
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #27476E ;
-  --secondary-color: #b3c3cf;
-  --accent1-color: #ECA400;
-  --accent2-color: #EAF8BF;
+  --primary-color: #9e9e9e ;
+  --secondary-color: #A01313;
+  --accent1-color: #167A1D;
+  --accent2-color: black;
 
   /* change the values below to your chosen font(s) */
   --heading-font: 'Josefin Sans', sans-serif;
@@ -16,42 +16,42 @@
   --headline-color-on-white: #ECA4003;  /* headlines on a white background */ 
   --headline-color-on-color: #2D2D2A; /* headlines on a colored background */ 
   --paragraph-color-on-white: black; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #EAF8BF; /* paragraph text on a colored background */ 
+  --paragraph-color-on-color: black; /* paragraph text on a colored background */ 
   --paragraph-background-color: #738276  ;
-  --nav-link-color: orange;
-  --nav-background-color: #27476E;
+  --nav-link-color: blue;
+  --nav-background-color: #167A1D;  
   --nav-hover-link-color: white;
   --nav-hover-background-color: #738276;
 }
 
 
 body {
-  background-color: #27476E;
-  color: #EAF8BF;
+  background-color: #9e9e9e;
+  color: black(230, 230, 230);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   font-size: larger;
 }
 
 h1 {
-  color: #ECA400;
+  color: rgb(160, 19, 19);
   grid-column: 2/3;
   text-align: center;
   border-bottom: 2px solid var(--accent1-color);
 }
 
 h2 {
-  color: #ECA400;
+  color: rgb(156, 24, 24);
   grid-column: 2/3;
   text-align: center;
 }
 
 h3{
-  color: #b3c3cf
+  color: #167A1D
 }
 
 h4 {
-  background: #738276
+  background: white
 }
 
 a{ 
@@ -95,10 +95,10 @@ section {
     min-width: 350px;
     margin: 30px auto;
     text-align: center;
-    border: solid black 5px;
+    border: solid #167A1D 5px;
   }
   .colors th {
-    background-color: #999;
+    background-color: #ffffff;
   }
   .colors td{
     width: 25%;
@@ -121,6 +121,6 @@ section {
     color: var(--paragraph-color-on-color);
   }
   .hex {
-    color:black;
+    color:white;
   }
 
