@@ -13,7 +13,7 @@
 body {
     background-color: white;
     color: #F0F3BD;
-    font: 'Cinzel';
+    font-family: 'Cinzel';
 }
 
 /* Header */
@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    font: "Raleway"
+    font-family: "Raleway";
 }
 
  nav {  
