@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway&display=swap');
+
+:root {
+  --primary-color: #03556e;
+  --secondary-color: #d4a300;
+  --accent1-color: white;
+  --accent2-color: #F0F3BD;
+  --heading-font: 'Josefin Sans', sans-serif;
+  --paragraph-font: 'Kanit', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: white;
+    color: #F0F3BD;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Header */
+header {
+    background-color: #03556e;
+    color: #d4a300;
+    border: 2px solid black;
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-between; /* Align items with even spacing */
+    align-items: center; /* Vertically center items */
+}
+ nav{   
+    flex-direction: column;
+    background-color: white;
+    color: #03556e;
+    border-top: 1px solid;
+    padding: 10px;
+    font-size: larger;
+    margin-right: 10px;
+ }
+
+ nav a:hover {
+    background-color: black;
+    color: whitesmoke;
+ }
+
+h1 {
+    /* margin: 0, 10, 10, 10; Remove default margin */
+    
+}
+
+#city-logo {
+    /* max-width: 100%; Ensure the logo doesn't exceed its container */
+    height: auto;   /* Maintain aspect ratio */
+    margin-left: 10px; 
+}
+
+/* Menu Bar */
+#menu {
+    background-color: whitesmoke;
+
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100px;
+    margin-right: 10px
+}
+
+#menu::before {
+    content: "☰";
+    color: black;
+}
+
+#menu.open::before {
+    content: "💡";
+}
+
+/* Hero */
+#hero-img{
+    grid-column: 1/4;
+    grid-row: 2/7;
+    border: 2px solid black;
+    padding: 10px;
+    row-gap: 20px;
+    background-color: #03556e;
+    margin-top:  10px;
+    margin-left: 10px;
+}
+
+#join {
+    position: absolute; 
+    top: 90%; 
+    left: 40%; 
+    transform: translate(-50%, -50%);
+}
+
+/* Sections */
+
+section { 
+    text-align: center;
+}
+
+h4 {
+    color: #d4a300;
+    border-bottom:  solid 2px var(--secondary-color);
+}
+.weather-card {
+    background-color: #03556e;
+    color: #F0F3BD;
+    border: 2px solid black;
+    grid-column: 2/4;
+    grid-row: 7/8;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.calander-card {
+    background-color: #03556e;
+    color: #F0F3BD;
+    border: 2px solid black;
+    grid-column: 2/4;
+    grid-row: 8/10;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.announcements-card {
+    background-color: #03556e;
+    color: #F0F3BD;
+    border: 2px solid black;
+    grid-column: 2/4;
+    grid-row: 10/12;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.shout_out-card {
+    background-color: #03556e;
+    color: #F0F3BD;
+    grid-column: 4/5;
+    grid-row: 2/12;
+    border: black solid 2px;
+    margin: 10px;
+}
+
+.buisness_of_the_month {
+    background-color: #03556e;
+    color: #F0F3BD;
+    grid-row: 7/12;
+    border: black solid 2px;
+    margin: 10px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #03556e;
+    color: white;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 1/5;
+    justify-content: center;
+}

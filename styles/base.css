@@ -50,12 +50,12 @@ nav a:hover{
 
 /* menu bar */
 
- #menu {
-		background-color: brown;
-		color: white;
-		border: none;
-		padding: 10px;
-		cursor: pointer;
+#menu {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
 #menu::before {
 	content: "☰";
@@ -120,6 +120,7 @@ main h2{
 footer{
     text-align: center;
 }
+
 
 /*}Navigation  */
 .navigation {
