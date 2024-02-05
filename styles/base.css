@@ -132,8 +132,7 @@ main h2{
 /* ifram */
 
 
-iframe
-{
+iframe{
     width: 550px; 
     height: 400px;
     margin: auto; 
