@@ -1,0 +1,19 @@
+@media screen and (min-width: 500px)
+{
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #menu {
+        display: block;
+    }
+
+    nav ul {
+        display: flex
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}

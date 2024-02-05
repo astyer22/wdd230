@@ -1,5 +1,5 @@
 /* Font stuff */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway&display=swap');
 
 /* header */
 header {
@@ -10,6 +10,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    font-family: 'Raleway';
 
 }
 
@@ -25,7 +26,7 @@ header h1{
 }
 /* Nav */
 
-nav {
+nav{
     display: flex;
     flex-direction: column;
     background-color: goldenrod;
@@ -43,7 +44,7 @@ nav a{
     text-align: center;
 }
 
-nav a:hover{
+.navigation a:hover{
     background-color: #0e192e;
     color: white;
 }
@@ -51,11 +52,18 @@ nav a:hover{
 /* menu bar */
 
 #menu {
-    background-color: brown;
-    color: white;
-    border: none;
+    display: block;
+    display: block;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+    background-color: goldenrod;
+    color: black;
+    border: black solid 1px;
     padding: 10px;
     cursor: pointer;
+    margin-top: 5px;
+    margin-left:5px;
 }
 #menu::before {
 	content: "☰";
@@ -71,6 +79,8 @@ nav a:hover{
 body {
     background-color: darkcyan;
     font-size: large;
+    font-family: 'Raleway';
+    
 }
 
 /* main */
@@ -78,6 +88,8 @@ body {
 main h2{
     text-align: center;
     border-bottom: 2px solid;
+    grid-column: 1/3;
+    font-family: 'Cinzel';
 }
 
 .activities-card{
@@ -86,6 +98,7 @@ main h2{
     margin-right: 115px;
     margin-left: 120px;
     border: 1px solid;
+    grid-column: 1/3;
 }
 
 .activities-card h3{
@@ -105,6 +118,7 @@ main h2{
     margin-top: 40px;
     text-align: center;
     border: 1px solid;
+    grid-column: 1/4;
 }
 
 .information-card h3{
@@ -113,6 +127,14 @@ main h2{
     padding: 10px; 
     margin: 0;
     background-color: darkgoldenrod;   
+}
+
+/* ifram */
+
+iframe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1/3;
 }
 
 /* footer */
