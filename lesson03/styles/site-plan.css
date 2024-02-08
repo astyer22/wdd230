@@ -1,46 +1,50 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #03556e ;
-  --secondary-color: #d4a300;
+  --secondary-color: #f5bd08;
   --accent1-color: white;
   --accent2-color: #F0F3BD;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: 'Josefin Sans', sans-serif;
-  --paragraph-font: 'Kanit', sans-serif;
-}
+  --heading-font: 'Cinzel', sans-serif;
+  --paragraph-font: 'Ralway', sans-serif;
 
 
 body {
   background-color: #03556e;
-  color: #F0F3BD;
+  color: var(--accent2-color);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  font-family: var(--paragraph-font);
   font-size: larger;
 }
 
 h1 {
-  color: #f5bd08;
+  color: var(--secondary-color);
   grid-column: 2/3;
   text-align: center;
   border-bottom: 2px solid var(--accent1-color);
+  font-family: var(--heading-font);
 }
 
 h2 {
-  color: #f5bd08;
+  color: var(--secondary-color);
   grid-column: 2/3;
   text-align: center;
+  font-family: var(--heading-font);
 }
 
 h3{
-  color: White
+  color: var(--accent1-color);
+  font-family: var(--heading-font);
 }
 
 h4 {
-  background: black
+  background: black;
+  font-family: var(--heading-font);
 }
 
 a{ 
@@ -89,7 +93,7 @@ section {
     min-width: 350px;
     margin: 30px auto;
     text-align: center;
-    border: solid #f5bd08 5px;
+    border: solid var(--secondary-color) 5px;
   }
   .colors th {
     background-color: black;

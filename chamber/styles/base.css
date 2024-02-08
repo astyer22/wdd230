@@ -96,10 +96,8 @@ h1 {
 }
 
 #join {
-    position: absolute; 
-    top: 90%; 
-    left: 40%; 
-    transform: translate(-50%, -50%);
+    position: relative; 
+    /* float: center; */
 }
 
 /* Sections */
