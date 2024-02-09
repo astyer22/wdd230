@@ -41,7 +41,6 @@ nav a{
     text-decoration: none;
     padding: 5px;
     font-size: larger;
-    text-align: center;
 }
 
 .navigation a:hover{
@@ -52,7 +51,6 @@ nav a{
 /* menu bar */
 
 #menu {
-    display: block;
     display: block;
 	font-weight:700;
 	text-decoration: none;
