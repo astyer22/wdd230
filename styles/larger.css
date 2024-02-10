@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px)
+@media screen and (min-width: 620px)
 {
     main{
         display: grid;
@@ -6,14 +6,15 @@
     }
     
     #menu {
+        display: none;
+    }
+
+    .navigation {
+		flex-direction: row;
+}
+
+    .navigation a {
         display: block;
-    }
-
-    nav ul {
-        display: flex
-    }
-
-    nav ul li {
         flex: 1 1 100%;
-    }
+}
 }

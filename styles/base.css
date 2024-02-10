@@ -26,7 +26,7 @@ header h1{
 }
 /* Nav */
 
-nav{
+.navigation{
     display: flex;
     flex-direction: column;
     background-color: goldenrod;
@@ -35,7 +35,8 @@ nav{
     
 }
 
-nav a{ 
+.navigation a{ 
+    display: none;
     text-align: center;
     color: black;
     text-decoration: none;
@@ -70,6 +71,10 @@ nav a{
 
 #menu.open::before {
 	content: "🐤";
+}
+
+.open a {
+	display: block;
 }
 
 
@@ -145,8 +150,4 @@ footer{
 }
 
 
-/*}Navigation  */
-.navigation {
-  display: none;
-}
 

@@ -1,0 +1,21 @@
+@media screen and (min-width: 860px){
+    
+    body{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .rule-of-thirds{
+        grid-column:1/2 ;
+    }
+
+    .visual-hierarchy{
+        grid-column: 2/3;
+    }
+
+    .parc-contrast{
+        grid-column: 3/4;
+        grid-row:1;
+    }
+}
+
+
