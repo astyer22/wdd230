@@ -10,6 +10,7 @@
 <!-- links -->
 <link rel="stylesheet" href="styles/normalize.css">
 <link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/small.css">
 <link rel="stylesheet" href="styles/medium.css">
 <link rel="stylesheet" href="styles/larger.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway&display=swap">
@@ -25,27 +26,32 @@
     <header>
         <img id="city-logo" src="images/goldenrod_city_logo_.png" alt="goldenrod_city_Logo">
         <h1> Welcome to the  Goldenrod City Chamber of Commerce </h1>
+        <!-- Rounded switch -->
+        <label class="switch">
+            <input id="switch" type="checkbox">
+            <span class="slider round"></span>
+        </label>
         <button id="menu">Menu</button>
     </header>
         
     <nav class="navigation">
-        <ul>
-            <li><a href="https://astyer22.github.io/wdd230/chamber/index.html">Home</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Directory</a></li>
-    </ul>
+        
+        <a href="https://astyer22.github.io/wdd230/chamber/index.html">Home</a>
+        <a href="#">Join</a>
+        <a href="#">About Us</a>
+        <a href="#">Directory</a>
+    
     </nav>
 
     <main>
         <div id="hero">
             <img id="hero-img" src="images/goldenrod_city_hero1.webp" alt="hero_img"> <br>
-            <!-- <button id="join">Join Here</button> -->
+            <button id="join">Join Here</button>
         </div>
 
     
         <section class="weather-card">
-        <h2>4-day Weather Forcast of Goldenrod City</h2>
+        <h2>Todays Weather Forcast of Goldenrod City (Chiba, Japan)</h2>
         </section>
 
         <section class="calander-card">
@@ -53,20 +59,18 @@
             The monthly calander for the Goldenrod City Chamber of Commerce. 
         </section>
 
+        <section class="our_businesses-card">
+            <h2>Our Members</h2>
+                <p>Pokémon Center</p> <br> 
+                <p>Pokém Mart</p> <br>
+                The <p>Safari Zone</p> <br>
+                GC <p>Pokemon Gym</p> <br>
+                <p>Pokéathlon Dome</p> <br>    
+        </section>
+
         <section class="spotlight-card">
             <h2>Buisness Spotlights</h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cumque quos similique facere vitae delectus eum laborum quis, aperiam tempora nulla totam accusamus ad aut consectetur ratione velit, consequatur dolore!
-        </section>
-
-        <section class="our_businesses-card">
-            <h2>Our Members</h2>
-            <ul>
-                Pokémon Center</li>
-                <li>Pokém Mart</li>
-                <li>The Safari Zone</li>
-                <li>Goldenrod City Pokemon Gym</li>
-                <li>Pokéathlon Dome</li>
-            </ul>
         </section>
 
         <section class="business_of_the_month">
@@ -78,12 +82,19 @@
     </main>
 
     <footer>
-        <a href="https://www.facebook.com/GoldenrodCityChamberofCommerce"> <img src="images/fb1.png" alt="Fb link"></a>
-        <a href="https://www.instagram.com/GoldenrodCityChamberofCommerce"> <img src="images/instagram_icon.png" alt= "IG link"></a>
-        <p>&copy; <span id="year"></span> Austin Styer | Idaho</p>
-        <p>Phone: (367)-890-1425 <br>Email: GoldenrodCityChambers@outlook.com </p>
-            
-        <p id="lastModified"></p>
+        <div class="social_imgs">
+            <a href="https://www.facebook.com/GoldenrodCityChamberofCommerce"> <img id="fb_img" src="images/fb1.png" alt="fb link"></a>
+            <a href="https://www.instagram.com/GoldenrodCityChamberofCommerce"> <img id="insta_img" src="images/instagram_icon.png" alt= "IG link"></a>
+        </div>
+
+        <div class="copy">
+            <p>&copy; <span id="year"></span> Austin Styer | Idaho</p>
+            <p id="lastModified"></p>
+        </div>
+
+        <div class="contact">
+            <p>Phone: (367)-890-1425 <br>Email: GoldenrodCityChambers@outlook.com </p>
+        </div>
     </footer>
 
     <script src="script/chamber.js"></script>

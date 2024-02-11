@@ -36,7 +36,3 @@ section {
     background-color: rgb(164, 170, 166);
 }
 
-/* Remove the grid-column property for .visual-hierarchy */
-.visual-hierarchy {
-    /* Adjust specific styles for the second card */
-}
