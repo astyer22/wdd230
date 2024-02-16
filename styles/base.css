@@ -24,6 +24,18 @@ header h1{
     
 
 }
+
+picture {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#temple{
+    /* width: 100%; */
+    height: auto;
+    display: block;
+    margin: auto; 
+
+}
 /* Nav */
 
 .navigation{
@@ -87,6 +99,8 @@ body {
 }
 
 /* main */
+
+
 
 main h2{
     text-align: center;
