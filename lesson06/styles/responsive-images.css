@@ -1,4 +1,21 @@
-#temple{
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#hero{
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    grid-column: 1/3;
+}
+
+#temple {
     width: 100%;
     height: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+
 }
