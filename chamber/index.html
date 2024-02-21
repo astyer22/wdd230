@@ -24,7 +24,7 @@
 </head>
 <body>
     <header>
-        <img id="city-logo" src="images/goldenrod_city_logo_.png" alt="goldenrod_city_Logo">
+        <img id="city-logo_" src="images\goldenrod_city_logo_.webp" alt="goldenrod_city_Logo">
         <h1> Welcome to the  Goldenrod City Chamber of Commerce </h1>
         <!-- Rounded switch -->
         <label class="switch">
@@ -44,14 +44,25 @@
     </nav>
 
     <main>
+
         <div id="hero">
-            <img id="hero-img" src="images/goldenrod_city_hero1.webp" alt="hero_img"> <br>
+            <picture>
+                <!-- <source srcset="images/hero_small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero_medium.webp" media="(max-width: 750px)">
+                <img id="hero-img" src="images/goldenrod_city_hero1.webp" alt="hero_img"> -->
+                <source srcset="images/temp-hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/temp-hero-medium.webp" media="(max-width: 750px)">
+                <img id="hero-img" src="images/temp-hero-large.webp" alt="hero_img">  
+            </picture>
             <button id="join">Join Here</button>
         </div>
 
     
         <section class="weather-card">
-        <h2>Todays Weather Forcast of Goldenrod City (Chiba, Japan)</h2>
+            <h2>Todays Weather Forecast of Goldenrod City (Chiba, Japan)</h2>
+            <p>Temperature: <span id="temperature">45</span> °F</p>
+            <p>Wind Speed: <span id="windspeed">6</span> mph</p>
+            <p>Wind Chill: <span id="windchill"></span></p>
         </section>
 
         <section class="calander-card">
@@ -83,8 +94,8 @@
 
     <footer>
         <div class="social_imgs">
-            <a href="https://www.facebook.com/GoldenrodCityChamberofCommerce"> <img id="fb_img" src="images/fb1.png" alt="fb link"></a>
-            <a href="https://www.instagram.com/GoldenrodCityChamberofCommerce"> <img id="insta_img" src="images/instagram_icon.png" alt= "IG link"></a>
+            <a href="https://www.facebook.com/GoldenrodCityChamberofCommerce"> <img id="fb_img" src="images/fb1.webp" alt="fb link"></a>
+            <a href="https://www.instagram.com/GoldenrodCityChamberofCommerce"> <img id="insta_img" src="images/instagram_icon.webp" alt= "IG link"></a>
         </div>
 
         <div class="copy">
