@@ -1,0 +1,27 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+}
+
+form {
+    background-color: lightpink;
+    border: black solid;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+}
+
+#f_name {
+    grid-row: 1;
+}
+
+#l_name {
+    grid-row: 2;
+}
+
+#email{
+    grid-row: 3;
+    Margin-top: 10px
+}
