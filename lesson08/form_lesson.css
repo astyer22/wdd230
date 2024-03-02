@@ -1,32 +1,29 @@
-body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-}
-
-form {
+.motive fieldset {
     background-color: lightpink;
     border: black solid;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-    margin-left: 150px;
-    margin-right: 150px;
 }
 
-
-input { 
-    margin-left: 100px;
-    margin-right: 100px;
+.motive label{
+    display: block;
+    margin-top: 10px;
 }
 
-button{
-    margin: 10px 100px;
+.motive legend{
+    color:blueviolet;
+    font-weight: bold;
+}
+.motive input { 
+    display:block;
+    
+}
+
+.motive [type="submit"] {
     background-color: silver;
-    border: black solid 2px
+    border: black solid 2px;
+    margin-top: 10px;
 }
 
-h1{ 
+h1 { 
     border-bottom: black solid;
+    text-align: center;
 }
