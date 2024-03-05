@@ -24,7 +24,7 @@
 </head>
 <body>
     <header>
-        <img id="city-logo_" src="images\goldenrod_city_logo_.webp" alt="goldenrod_city_Logo">
+        <img id="city-logo_" src="images/goldenrod_city_logo_.webp" alt="goldenrod_city_Logo">
         <h1> Welcome to the  Goldenrod City Chamber of Commerce </h1>
         <!-- Rounded switch -->
         <label class="switch">
@@ -58,53 +58,55 @@
 
                 <label>Email <input type="email" id="email" name="email" placeholder="paperbag@youremail.com" required></label>
 
-                <label>Mobile Phone Number<input type="telephone" id="phone" name="phone" required></label>
+                <label>Mobile Phone Number<input type="tel" id="phone" name="phone" required></label>
 
                 <label>Business/Organization's Name <input type="text" id="bname" name="bname" required></label>
 
                 <label>Business Description <input type="text" id="description" name="description"></label> 
 
                 <h2>Membership Level</h2>
-                <label>
-                    <input type="radio" name="levels" value="NP" required> Non Profit
-                    <p>Member Benefits:</p>
-                    <ul>
-                        <li>Networking opportunities with other non-profit organizations</li>
-                        <li>Access to resources and workshops tailored for non-profits</li>
-                        <li>Promotion of your organization's events and initiatives</li>
-                    </ul>
-                </label>
-                <label>
-                    <input type="radio" name="levels" value="bronze" required> Bronze 
-                    <p>Member Benefits:</p>
-                    <ul>
-                        <li>Listing in the Chamber's online directory</li>
-                        <li>Invitations to Chamber networking events</li>
-                        <li>Discounted rates for Chamber-sponsored workshops</li>
-                        <li><strong>Includes all benefits from Bronze membership level</strong></li>
-                    </ul>
-                </label>
-                <label>
-                    <input type="radio" name="levels" value="silver" required> Silver
-                    <p>Member Benefits:</p>
-                    <ul>
-                        <li>Enhanced listing in the Chamber's online directory</li>
-                        <li>Featured promotion on Chamber's social media platforms</li>
-                        <li>Access to exclusive member-only events</li>
-                        <li><strong>Includes all benefits from Bronze membership level</strong></li>
-                    </ul>
-                </label>
-                <label>
-                    <input type="radio" name="levels" value="gold" required> Gold
-                    <p>Member Benefits:</p>
-                    <ul>
-                        <li>Priority placement and branding in Chamber publications</li>
-                        <li>Recognition at Chamber events and in press releases</li>
-                        <li>Complimentary tickets to Chamber-sponsored events</li>
-                        <li><strong>Includes all benefits from Silver membership level</strong></li>
-                    </ul>
-                </label>
+                <input type="radio" name="levels" value="NP" required> 
+                <label>Non Profit</label>
+                <span class="member-benefits">
+                    Member Benefits:<br>
+                    - Networking opportunities with other non-profit organizations<br>
+                    - Access to resources and workshops tailored for non-profits<br>
+                    - Promotion of your organization's events and initiatives<br>
+                </span>
 
+                <input type="radio" name="levels" value="bronze" required> 
+                <label>Bronze</label>
+                <span class="member-benefits">
+                    Member Benefits:<br>
+                    - Listing in the Chamber's online directory<br>
+                    - Invitations to Chamber networking events<br>
+                    - Discounted rates for Chamber-sponsored workshops<br>
+                    - Includes all benefits from Bronze membership level<br>
+                </span>
+
+                <input type="radio" name="levels" value="silver" required> 
+                <label>Silver</label>
+                <span class="member-benefits">
+                    Member Benefits:<br>
+                    - Enhanced listing in the Chamber's online directory<br>
+                    - Featured promotion on Chamber's social media platforms<br>
+                    - Access to exclusive member-only events<br>
+                    - Includes all benefits from Bronze membership level<br>
+                </span>
+
+                <input type="radio" name="levels" value="gold" required> 
+                <label>Gold</label>
+                <span class="member-benefits">
+                    Member Benefits:<br>
+                    - Priority placement and branding in Chamber publications<br>
+                    - Recognition at Chamber events and in press releases<br>
+                    - Complimentary tickets to Chamber-sponsored events<br>
+                    - Includes all benefits from Silver membership level<br>
+                </span>
+
+
+                
+                
                 <input type="hidden" id="formLoadedTimestamp" name="formLoadedTimestamp">
 
                 <input type="submit" value="Join Now" id="submit">
