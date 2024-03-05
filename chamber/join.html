@@ -22,7 +22,7 @@
     <meta property="og:image" content="https://pokemon.fandom.com/wiki/Goldenrod_City">
     <meta property="og:url" content="https://astyer22.github.io/wdd230/chamber/index.html">
 </head>
-<body class="jpage">
+<body>
     <header>
         <img id="city-logo_" src="images\goldenrod_city_logo_.webp" alt="goldenrod_city_Logo">
         <h1> Welcome to the  Goldenrod City Chamber of Commerce </h1>
@@ -43,12 +43,12 @@
     
     </nav>
 
-    <main>
+    <main class="join-main">
 
         <h1>Join the Fun!</h1>
         <form method="get" action="Thankyou.html" class="join">
-           <fieldset class="basic">
-                <h2>Tell Us About You</h2>
+           <fieldset>
+                <h2>Tell Us About Yourself</h2>
                 
                 <label>First Name<input type="text" id="fname" name="fname" required></label>
 
@@ -62,12 +62,8 @@
 
                 <label>Business/Organization's Name <input type="text" id="bname" name="bname"  required></label>
 
-                <label>Business Description <input type="text" id="description" name="description"></label>
+                <label>Business Description <input type="text" id="description" name="description"></label> 
 
-            </fieldset> 
-
-
-            <fieldset class = membership>
                 <h2>Membership Level</h2>
                 <label>
                     <input type="radio" name="levels" value="NP" id="levels" required> Non Profit
@@ -79,7 +75,7 @@
                     </ul>
                 </label>
                 <label>
-                    <input type="radio" name="levels" value="bronze" id="levels" required> Bronze
+                    <input type="radio" name="levels" value="bronze" id="levels" required> Bronze 
                     <p>Member Benefits:</p>
                     <ul>
                         <li>Listing in the Chamber's online directory</li>
