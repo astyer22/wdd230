@@ -363,8 +363,11 @@ main h1 {
 form {
     background-color: #ccc;
     width: 150%;
-    margin: 20px;
     grid-column: 2;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
 
 }
 
