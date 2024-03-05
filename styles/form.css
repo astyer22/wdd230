@@ -1,27 +1,40 @@
-.wk8 fieldset {
-    background-color: green;
-    color: Black;
-    font-size: large;
+:root {
+    --primary-background-color: gray;
+    --fieldset-background-color: green;
+    --fieldset-text-color: black;
+    --fieldset-font-size: large;
+    --input-background-color: white;
+    --input-text-color: black;
+    --placeholder-color: lightslategray;
+    --legend-text-color: white;
 }
 
-.wk8 label {
-    display: block
+/* Now you can use these variables throughout your stylesheet */
+
+fieldset {
+    background-color: var(--fieldset-background-color);
+    color: var(--fieldset-text-color);
+    font-size: var(--fieldset-font-size);
 }
 
-.wk8 input {
+label {
     display: block;
-    background-color: white;
-    color: black;
 }
 
-.wk8 input::placeholder {
-    color: lightslategray;
+input {
+    display: block;
+    background-color: var(--input-background-color);
+    color: var(--input-text-color);
 }
 
-.wk8 legend{
-    color: white
+input::placeholder {
+    color: var(--placeholder-color);
 }
 
-body{
-    background-color: gray;
+legend {
+    color: var(--legend-text-color);
+}
+
+body {
+    background-color: var(--primary-background-color);
 }
