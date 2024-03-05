@@ -50,3 +50,9 @@ var currentWindSpeed = parseFloat(document.getElementById("windspeed").textConte
 // Calculate and display wind chill
 var windChill = calculateWindChill(currentTemperature, currentWindSpeed);
 document.getElementById("windchill").textContent = windChill;
+
+// Get the hidden input element
+var timestampInput = document.getElementById('timestamp');
+
+// Set its value to the current date/time in milliseconds
+timestampInput.value = Date.now();

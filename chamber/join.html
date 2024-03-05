@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Goldenrod City Chamber of Commerce Home Page</title>
+    <meta name="author" content="Austin Styer">
+    <meta name="description" content="This is the Homepage for the Goldenrod City Chamber of Commerce"> 
+
+<!-- links -->
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/medium.css">
+<link rel="stylesheet" href="styles/larger.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway&display=swap">
+<link rel="icon" href="images/chamber_favicon.ico">
+
+<!-- Open Graph meta properties -->
+    <meta property="og:title" content="Goldenrod City Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pokemon.fandom.com/wiki/Goldenrod_City">
+    <meta property="og:url" content="https://astyer22.github.io/wdd230/chamber/index.html">
+</head>
+<body class="jpage">
+    <header>
+        <img id="city-logo_" src="images\goldenrod_city_logo_.webp" alt="goldenrod_city_Logo">
+        <h1> Welcome to the  Goldenrod City Chamber of Commerce </h1>
+        <!-- Rounded switch -->
+        <label class="switch">
+            <input id="switch" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <button id="menu">Menu</button>
+    </header>
+        
+    <nav class="navigation">
+        
+        <a href="https://astyer22.github.io/wdd230/chamber/index.html">Home</a>
+        <a href="#">Join</a>
+        <a href="#">About Us</a>
+        <a href="#">Directory</a>
+    
+    </nav>
+
+    <main>
+
+        <h1>Join the Fun!</h1>
+        <form method="get" action="Thankyou.html" class="join">
+           <fieldset class="basic">
+                <h2>Tell Us About You</h2>
+                
+                <label>First Name<input type="text" id="fname" name="fname" required></label>
+
+                <label>Last Name <input type="text" id="lname" name="lname" required></label>
+
+                <label>Title or Position <input type="text" id="title" name="title" pattern="^[a-zA-Z\s-]{7,}$" placeholder="What is your Position?"></label>
+
+                <label>Email <input type="email" id="email" name="email"placeholder="paperbag@youremail.com" required></label>
+
+                <label>Mobile Phone Number<input type="telephone" id="phone" name="phone" required></label>
+
+                <label>Business/Organization's Name <input type="text" id="bname" name="bname"  required></label>
+
+                <label>Business Description <input type="text" id="description" name="description"></label>
+
+            </fieldset> 
+
+
+            <fieldset class = membership>
+                <h2>Membership Level</h2>
+                <label>
+                    <input type="radio" name="levels" value="NP" id="levels" required> Non Profit
+                    <p>Member Benefits:</p>
+                    <ul>
+                        <li>Networking opportunities with other non-profit organizations</li>
+                        <li>Access to resources and workshops tailored for non-profits</li>
+                        <li>Promotion of your organization's events and initiatives</li>
+                    </ul>
+                </label>
+                <label>
+                    <input type="radio" name="levels" value="bronze" id="levels" required> Bronze
+                    <p>Member Benefits:</p>
+                    <ul>
+                        <li>Listing in the Chamber's online directory</li>
+                        <li>Invitations to Chamber networking events</li>
+                        <li>Discounted rates for Chamber-sponsored workshops</li>
+                        <li><strong>Includes all benefits from Bronze membership level</strong></li>
+                    </ul>
+                </label>
+                <label>
+                    <input type="radio" name="levels" value="silver" id="levels" required> Silver
+                    <p>Member Benefits:</p>
+                    <ul>
+                        <li>Enhanced listing in the Chamber's online directory</li>
+                        <li>Featured promotion on Chamber's social media platforms</li>
+                        <li>Access to exclusive member-only events</li>
+                        <li><strong>Includes all benefits from Bronze membership level</strong></li>
+                    </ul>
+                </label>
+                <label>
+                    <input type="radio" name="levels" value="gold" id="levels" required> Gold
+                    <p>Member Benefits:</p>
+                    <ul>
+                        <li>Priority placement and branding in Chamber publications</li>
+                        <li>Recognition at Chamber events and in press releases</li>
+                        <li>Complimentary tickets to Chamber-sponsored events</li>
+                        <li><strong>Includes all benefits from Silver membership level</strong></li>
+                    </ul>
+                </label>
+
+                <input type="hidden" id="formLoadedTimestamp" name="formLoadedTimestamp">
+
+                <input type="submit" value="Join Now">
+           </fieldset> 
+
+
+        </form>
+    </main>
+
+    <footer>
+        <div class="social_imgs">
+            <a href="https://www.facebook.com/GoldenrodCityChamberofCommerce"> <img id="fb_img" src="images/fb1.webp" alt="fb link"></a>
+            <a href="https://www.instagram.com/GoldenrodCityChamberofCommerce"> <img id="insta_img" src="images/instagram_icon.webp" alt= "IG link"></a>
+        </div>
+
+        <div class="copy">
+            <p>&copy; <span id="year"></span> Austin Styer | Idaho</p>
+            <p id="lastModified"></p>
+        </div>
+
+        <div class="contact">
+            <p>Phone: (367)-890-1425 <br>Email: GoldenrodCityChambers@outlook.com </p>
+        </div>
+    </footer>
+
+    <script src="script/chamber.js"></script>
+</body>
+</html>
