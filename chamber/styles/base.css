@@ -40,7 +40,7 @@ h1 {
     text-align: center;
     grid-column: 2/4;
     color: var(--secondary-color);
-    font-family:var(--heading-font);
+    font-family: var(--heading-font);
 
 }
 
@@ -353,15 +353,16 @@ main h1 {
 }
 
 /* Form */
-.join-main{
+.join-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.join{
+
+.join {
     background-color: #ccc;
-    width: 100%; 
+    width: 100%;
     margin-bottom: 20px;
-    margin-top:20px;
+    margin-top: 20px;
     grid-column: 2/4;
 }
 
@@ -389,7 +390,7 @@ main h1 {
 }
 
 .join p {
-    color:var(--secondary-color);
+    color: var(--secondary-color);
     font-size: large;
     font-weight: bold;
 }
@@ -404,7 +405,7 @@ main h1 {
     color: white;
 }
 
-.dark-mode h1  {
+.dark-mode h1 {
     color: white;
 }
 
