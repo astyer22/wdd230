@@ -394,6 +394,12 @@ main h1 {
     font-weight: bold;
 }
 
+.join input[type="text"],
+.join input[type="email"],
+.join input[type="telephone"] {
+    width: 100%;
+}
+
 .dark-mode p {
     color: white;
 }
