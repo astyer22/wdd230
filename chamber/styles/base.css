@@ -384,6 +384,10 @@ main h1 {
     display: block;
     /* width: 100% */
 }
+.join textarea {
+    display: block;
+    width: 100%;
+}
 
 .join #levels {
     margin-top: 10px;
