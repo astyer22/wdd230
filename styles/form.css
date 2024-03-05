@@ -29,6 +29,7 @@ input {
 
 input::placeholder {
     color: var(--placeholder-color);
+    font-size: smaller;
 }
 
 legend {
