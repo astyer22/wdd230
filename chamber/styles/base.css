@@ -396,8 +396,9 @@ main h1 {
 }
 
 .join input[type="text"],
+.join input[type="text area"],
 .join input[type="email"],
-.join input[type="telephone"] {
+.join input[type="tel"] {
     width: 100%;
 }
 
