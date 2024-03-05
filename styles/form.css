@@ -1,0 +1,27 @@
+.wk8 fieldset {
+    background-color: green;
+    color: Black;
+    font-size: large;
+}
+
+.wk8 label {
+    display: block
+}
+
+.wk8 input {
+    display: block;
+    background-color: white;
+    color: black;
+}
+
+.wk8 input::placeholder {
+    color: lightslategray;
+}
+
+.wk8 legend{
+    color: white
+}
+
+body{
+    background-color: gray;
+}
