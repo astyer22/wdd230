@@ -1,0 +1,27 @@
+{
+    "wardInformation" : {
+    "familyName" : "Baxter",
+    "moveInDate" : "May 5th, 2004",
+    "numberOfRecords" : 3,
+    "visitedByBishopric" : "Yes",
+    "familyMembers" : [
+        {
+           "name" : "Richard Jay Madison",
+           "gender" : "Male",
+           "birthdate" : "1987-01-01"
+        },
+
+        {
+            "name" : "Baylee Ane Madison",
+            "gender" : "Female",
+            "birthdate" : "October 5th, 1993"
+        },
+
+        {
+            "name" : "Oak Jacob Madison",
+            "gender" : "Male",
+            "birhtday" : "November 26nd, 2005"
+        }
+    ]
+    }
+}
