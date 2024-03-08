@@ -1,0 +1,114 @@
+{
+    "lessons": [
+       {
+          "lesson": "01",
+          "links": [
+             {
+                "url": "https://astyer22.github.io/wdd230/lesson01/holygrail.html",
+                "title": "01 Holy Grail"
+             }
+          ]
+       },
+       {
+          "lesson": "02",
+          "links": [
+             {
+                "url": "https://astyer22.github.io/wdd230/lesson02/media-query.html",
+                "title": "02 Media-Query Example"
+             },
+             {
+                "url": "https://astyer22.github.io/wdd230/lesson02/design-principles.html",
+                "title": "Design Principles"
+             }
+          ]
+       },
+       {
+          "lesson": "03",
+          "links": [
+             {
+                "url": "https://codepen.io/astyer22/pen/GReMyWq",
+                "title": "03 Codepen Psuedo Elements"
+             },
+             {
+                "url": "lesson03/images/combinators.png",
+                "title": "Combinators Screenshot"
+             },
+             {
+                "url": "https://codepen.io/astyer22/pen/mdoBpoW",
+                "title": "Codepen Responsive Navigation"
+             },
+             {
+                "url": "https://astyer22.github.io/wdd230/lesson03/chamber-site-plan.html",
+                "title": "Chamber of Commerce Site-Plan"
+             }
+          ]
+       },
+       {
+          "lesson": "04",
+          "links": [
+             {
+                "url": "https://codepen.io/astyer22/pen/XWGEXgR",
+                "title": "04 Code Pin Psuedo"
+             }
+          ]
+       },
+       {
+          "lesson": "05",
+          "links": [
+             {
+                "url": "https://astyer22.github.io/wdd230/lesson05/bom.html",
+                "title": "05 Book of Mormon Top 10"
+             }
+          ]
+       },
+       {
+          "lesson": "06",
+          "links": [
+             {
+                "url": "lesson06/images/landscape.webp",
+                "title": "06"
+             },
+             {
+                "url": "https://astyer22.github.io/wdd230/lesson06/responsive-images.html",
+                "title": "07 Responsive Page"
+             },
+             {
+                "url": "https://astyer22.github.io/wdd230/lesson07/bom.html",
+                "title": "Local Storage BOM"
+             }
+          ]
+       },
+       {
+          "lesson": "08",
+          "links": [
+             {
+                "url": "https://astyer22.github.io/wdd230/lesson08/form_lesson.html",
+                "title": "08 Personal Form Creation"
+             },
+             {
+                "url": "https://astyer22.github.io/wdd230/lesson08/tablebuild.html",
+                "title": "Acme table Build"
+             }
+          ]
+       },
+       {
+          "lesson": "09",
+          "links": [
+             {
+                "url": "file:///C:/Users/Rachel/OneDrive%20-%20BYU-Idaho/BYU-i%20Astyer/Winter%202024/wdd230/lesson09/new-ward-members.json",
+                "title": "09 JSON Activity"
+             }
+          ]
+       },
+       {
+          "lesson": "10",
+          "links": [
+             {
+                "url": "#",
+                "title": "10"
+             }
+          ]
+       }
+    ]
+ }
+ 
