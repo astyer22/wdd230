@@ -66,10 +66,11 @@ const url = "https://github.com/astyer22/wdd230/chamber/members.json"
 async function getMemberData () {
     const response = await fetch(url)
     const data = await response.json()
-    displayMembers(data.members);
+    displayMembers(data.ChamberOfCommerce.members);
 }
 
 const displayMembers = (members) => {
+    const cards = document.getElementById("cards");
     members.forEach((member) => {
         const card = document.createElement("section");
         card.innerHTML = `
