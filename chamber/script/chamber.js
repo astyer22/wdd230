@@ -56,3 +56,32 @@ var timestampInput = document.getElementById('timestamp');
 
 // Set its value to the current date/time in milliseconds
 timestampInput.value = Date.now();
+
+// Directory Page
+
+const baseURL = "https://github.com/astyer22/wdd230";
+
+const url = "https://github.com/astyer22/wdd230/chamber/members.json"
+
+async function getMemberData () {
+    const response = await fetch(url)
+    const data = await response.json()
+    displayMembers(data.members);
+}
+
+const displayMembers = (members) => {
+    members.forEach((member) => {
+        const card = document.createElement("section");
+        card.innerHTML = `
+        <h2>${member.name}</h2>
+        <h3>${member.address}</h3>
+        <h3>${member.phoneNumber}</h3>
+        <h3>${member.membershipLevel}</h3>
+        <h3>${member.websiteURL}</h3>
+        <h3>${member.other}</h3>
+        <img src=${member.image} alt="Image of ${member.name} loading="lazy" width=340 height=440>
+        `;
+        cards.append(card);
+    });
+};
+getMemberData()
