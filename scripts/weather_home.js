@@ -30,4 +30,4 @@ async function apiFetch() {
         } 
 }
 
-apiFetch
+apiFetch();
