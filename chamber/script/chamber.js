@@ -27,6 +27,23 @@ switchButton.addEventListener("click", () => {
     }
 });
 
+// Banner
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the current day of the week
+    const today = new Date().getDay();
+
+    // Check if it's Monday, Thesday or Wednesday
+    if (today >=1 && today < 3) {
+        // Display Banner
+        document.getElementById("banner").style.display = "block;"
+
+        // Add event listener to the close button
+        document.getElementById("closeBanner").addEventListener("click", function() {
+            // Hide the baanner when the close button is clicked
+            document.getElementById("banner").style.display = "none";
+        })
+    }
+});
 
 
 // windchill.js

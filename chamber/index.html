@@ -58,33 +58,27 @@
         </div>
 
     
-        <section class="weather-forecast">
-    <h2>Weather Forecast for the Next 3 Days</h2>
-    <div class="forecast-day" id="day1">
-        <h3>Day 1</h3>
-        <p><span class="forecast-temp" id="temp1"></span>&deg;F</p>
-        <figure>
-            <img class="forecast-icon" id="icon1" src="" alt="">
-            <figcaption id="desc1"></figcaption>
-        </figure>
-    </div>
-    <div class="forecast-day" id="day2">
-        <h3>Day 2</h3>
-        <p><span class="forecast-temp" id="temp2"></span>&deg;F</p>
-        <figure>
-            <img class="forecast-icon" id="icon2" src="" alt="">
-            <figcaption id="desc2"></figcaption>
-        </figure>
-    </div>
-    <div class="forecast-day" id="day3">
-        <h3>Day 3</h3>
-        <p><span class="forecast-temp" id="temp3"></span>&deg;F</p>
-        <figure>
-            <img class="forecast-icon" id="icon3" src="" alt="">
-            <figcaption id="desc3"></figcaption>
-        </figure>
-    </div>
-</section>
+        
+        <section class="weather-card">
+            <h2>Today's the temperature in Goldenrod City (Chiba, Japan) is</h2>
+            <section id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+            <p id="weather-description"></p> <!-- Added this line -->
+            <p>Wind Speed: <span id="windspeed">6</span> mph</p>
+            <p>Wind Chill: <span id="windchill"></span></p>
+
+            <hr>
+
+            <section class="forecast">
+                <h3>Here is a three day forcast of Goldenrod City</h3>
+                <div id=".forcast"></span></div>
+            </section>
+        </section>
+         
 
         <section class="calander-card">
             <h2>Goldenrod City Calander</h2>
@@ -128,7 +122,13 @@
             <p>Phone: (367)-890-1425 <br>Email: GoldenrodCityChambers@outlook.com </p>
         </div>
     </footer>
+    
+<!-- Banner -->
+    <div id="banner" style="display: none;">
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.! <button id="closeBanner">Close</button></p>
+    </div>
 
+<!-- <Java Script -->
     <script src="script/chamber.js"></script>
     <script src="script/weather_chamber.js"></script>
 </body>
