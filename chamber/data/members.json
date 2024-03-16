@@ -1,0 +1,68 @@
+{
+    "ChamberOfCommerce": {
+        "members": [{
+                "name": "Pokémon Center",
+                "address": "Pikachu Avenue, Goldenrod City, Johto Region",
+                "phoneNumber": "435-567-8901",
+                "websiteURL": "https://goldenrod.pokecenter.com",
+                "image": "./images/pokemon_center.webp",
+                "membershipLevel": "Non Profit",
+                "other": "Member for 5 years."
+            },
+            {
+                "name": "GoldenRod Poké School",
+                "address": "Vinewhip Street, Goldenrod City, Johto Region",
+                "phoneNumber": "435-435-6534",
+                "websiteURL": "https://goldenrod-pokeschool.com",
+                "image": "./images/pokemon_school.webp",
+                "membershipLevel": "Non Profit",
+                "other": "Member for 7 years"
+            },
+            {
+                "name": "The Name Changer",
+                "address": "Blazakin Blast Road, Goldenrod City, Johto Region",
+                "phoneNumber": "435-768-9876",
+                "websiteURL": "https://goldenrod-pokeschool.com",
+                "image": "./images/name_change.webp",
+                "membershipLevel": "Bronze",
+                "other": "Member for 1.5 years."
+            },
+            {
+                "name": "GoldenRod Battle Tower",
+                "address": "Champion Ave, Goldenrod City, Johto Region",
+                "phoneNumber": "435-267-8134",
+                "websiteURL": "https://goldenrod-pokeschool.com",
+                "image": "./images/battle_tower.webp",
+                "membershipLevel": "Silver",
+                "other": "Member for 3 years."
+            },
+            {
+                "name": "Poké Mart",
+                "address": "Throat Chop Ave, Goldenrod City, Johto Region",
+                "phoneNumber": "435-772-7811",
+                "websiteURL": "https://goldenrod-pokeschool.com",
+                "image": "./images/poke_mart.webp",
+                "membershipLevel": "Gold",
+                "other": "Member for 5 years."
+            },
+            {
+                "name": "GoldenRod Pokémon Gym",
+                "address": "Piplup Pines Road, Goldenrod City, Johto Region",
+                "phoneNumber": "435-209-6534",
+                "websiteURL": "https://goldenrod-pokeschool.com",
+                "image": "./images/gym_leader.webp",
+                "membershipLevel": "Gold",
+                "other": "Member for 4 years."
+            },
+            {
+                "name": "Pokemon Contest Tent",
+                "address": "Silvion Silks Ave, Goldenrod City, Johto Region",
+                "phoneNumber": "435-786534",
+                "websiteURL": "https://goldenrod-pokeschool.com",
+                "image": "./images/pokemon_contest.webp",
+                "membershipLevel": "Gold",
+                "other": "Member for 2 years."
+            }
+        ]
+    }
+}

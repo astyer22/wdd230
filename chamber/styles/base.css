@@ -440,3 +440,41 @@ main h1 {
 .dark-mode p {
     color: white;
 }
+
+/* dictory */ 
+ main {
+	margin: 0 auto;
+	padding: 0.5rem;
+	max-width: 700px;
+}
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: var(--primary-color);
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+#directory #cards {
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    /* grid-template-columns: 1fr  */
+}
+
+#cards img {
+    margin: 20px;
+
+} 
+
+section #cards {
+    gap: 20px;
+}
