@@ -5,6 +5,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
+
 function displayResults(data) {
     let temp = Math.round(data.main.temp);
     currentTemp.innerHTML = `${temp}&deg;F`;
@@ -13,7 +14,10 @@ function displayResults(data) {
     weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
     weatherIcon.setAttribute('alt', `${descrpt}`);
     weatherIcon.setAttribute('loading', 'lazy');
-};
+    
+    // Add this line to display the weather description
+    document.getElementById('weather-description').textContent = descrpt;
+}
 
 async function apiFetch() {
     try {

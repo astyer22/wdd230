@@ -254,7 +254,7 @@ h2 {
     font-family: var(--heading-font);
 }
 
-.weather-card {
+.weather-forecast {
     background-color: #03556e;
     color: var(--accent2-color);
     border: 2px solid black;
