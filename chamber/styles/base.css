@@ -33,6 +33,7 @@ header {
 main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    width: 100%;
 
 }
 
@@ -254,7 +255,7 @@ h2 {
     font-family: var(--heading-font);
 }
 
-.weather-card{
+.weather-card {
     background-color: #03556e;
     color: var(--accent2-color);
     border: 2px solid black;
@@ -384,6 +385,7 @@ main h1 {
     display: block;
     /* width: 100% */
 }
+
 .join textarea {
     display: block;
     width: 100%;
@@ -410,8 +412,10 @@ main h1 {
     border: 1px solid black;
     padding: 10px;
     display: inline-block;
-    margin-bottom: 10px; /* Add some space between each member-benefits section */
+    margin-bottom: 10px;
+    /* Add some space between each member-benefits section */
 }
+
 .dark-mode p {
     color: white;
 }
@@ -441,25 +445,26 @@ main h1 {
     color: white;
 }
 
-/* dictory */ 
- main {
-	margin: 0 auto;
-	padding: 0.5rem;
-	max-width: 700px;
+/* dictory */
+main {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 700px;
 }
 
 .menu {
-	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: var(--primary-color);
-	text-align: center;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    text-align: center;
 }
 
 .menu button {
-	padding: 1rem;
-	font-weight: 700;
+    padding: 1rem;
+    font-weight: 700;
 }
+
 #directory #cards {
     background-color: var(--primary-color);
     text-align: center;
@@ -473,7 +478,7 @@ main h1 {
 #cards img {
     margin: 20px;
 
-} 
+}
 
 section #cards {
     gap: 20px;

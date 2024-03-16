@@ -27,6 +27,18 @@ switchButton.addEventListener("click", () => {
     }
 });
 
+// join button
+document.addEventListener("DOMContentLoaded", function() {
+    // Wait for the document to be fully loaded before adding event listener
+    const joinButton = document.getElementById("join");
+
+    if (joinButton) {
+        joinButton.addEventListener("click", function() {
+            window.location.href = "https://astyer22.github.io/wdd230/chamber/join.html";
+        });
+    }
+});
+
 // Banner
 document.addEventListener("DOMContentLoaded", function() {
     // Get the current day of the week
