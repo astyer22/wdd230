@@ -373,9 +373,19 @@ footer {
     color: var(--secondary-color);
 }
 
+#discover-main p {
+    grid-column: 1/2;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
 picture {
     grid-column: 2/3;
 }
+
+
 
 /* Join Page */
 main h1 {
