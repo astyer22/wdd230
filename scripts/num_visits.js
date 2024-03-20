@@ -3,7 +3,7 @@ const visitsDisplay = document.querySelector(".visits");
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
 if (numVisits !== 0) {
-    visitsDisplay.textContent = numVisits;
+    visitsDisplay.textContent = console.log(numVisits);
 } else {
     visitsDisplay.textContent = `This is your first visit, welcome!`;
 }
@@ -11,4 +11,4 @@ if (numVisits !== 0) {
 numVisits++;
 
 localStorage.setItem("numVists-ls", numVisits);
-getMemberData()
+
