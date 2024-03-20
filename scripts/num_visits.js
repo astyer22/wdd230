@@ -10,5 +10,5 @@ if (numVisits !== 0) {
 
 numVisits++;
 
-localStorage.setItem("numVists-ls", numVisits);
+localStorage.setItem("numVisits-ls", numVisits);
 
