@@ -344,7 +344,37 @@ footer {
 } */
 .discover-main {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3%;
+}
+
+.demographics {
+    grid-column: 1/2;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+.demographics h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+.attractions {
+    grid-column: 1/2;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+.attractions h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+picture {
+    grid-column: 2/3;
 }
 
 /* Join Page */
