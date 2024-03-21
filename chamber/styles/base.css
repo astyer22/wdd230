@@ -334,7 +334,9 @@ footer {
 #discover-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
+    margin: 10px;
+    background-color: rgb(224, 214, 214);
 }
 
 .demographics {
@@ -343,6 +345,9 @@ footer {
     color: var(--accent2-color);
     font-family: var(--paragraph-font);
     text-align: center;
+    border: 2px solid black;
+    grid-row: 1/2;
+    /* margin: ; */
 }
 
 .demographics h2 {
@@ -356,6 +361,8 @@ footer {
     color: var(--accent2-color);
     font-family: var(--paragraph-font);
     text-align: center;
+    border: 2px solid black;
+    grid-row: 4/6;
 }
 
 .attractions h2 {
@@ -363,24 +370,48 @@ footer {
     color: var(--secondary-color);
 }
 
-.calander-card {
-    background-color: var(--primary-color);
-    /* color: var(--accent2-color); */
-    border: 2px solid black;
+.calendar-card {
     grid-column: 1/2;
-    grid-row: 10/12;
+    width: 300px;
+    margin: 0 auto;
     text-align: center;
-    margin: 10px
+    background-color: var(--primary-color);
+    border: 2px solid black;
+    grid-row: 2/4;
 }
 
+#calendar {
+    margin-top: 20px;
+    border: #000 solid 5px;
+    margin: 10px;
+}
 
-/* #discover-main p {
-    grid-column: 1/2;
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    font-family: var(--paragraph-font);
-    text-align: center;
-} */
+.day {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.day:hover {
+    background-color: #f0f0f0;
+}
+
+.event {
+    background-color: #ffa07a;
+    border-radius: 50%;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+}
+
+.day.current-day {
+    background-color: #ffff99; 
+    color: #000;
+}
 
 .label {
     font-family: var(--heading-font);
@@ -389,9 +420,24 @@ footer {
 
 #discover_images {
     grid-column: 2/3;
-    grid-row: 1;
-    
+    grid-row: 1/6;
+    /* justify-self: center; */
+    text-align: center;
+    background-color: var(--primary-color);
+    margin: 5px;
 }
+
+#discover_images {
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 20px; 
+}
+
+#discover_images img {
+    border: 2px solid black;
+    margin: 5px; 
+}
+
 
 
 /* Join Page */
