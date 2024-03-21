@@ -290,6 +290,7 @@ h2 {
     border: black solid 2px;
     text-align: center;
     margin: 10px;
+    padding: 5px;
 }
 
 .spotlight-card {
@@ -300,6 +301,7 @@ h2 {
     border: black solid 2px;
     text-align: center;
     margin: 10px;
+    padding: 5px;
 }
 
 /* Footer */
@@ -333,7 +335,7 @@ footer {
 
 #discover-main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 10px;
     margin: 10px;
     background-color: rgb(224, 214, 214);
@@ -347,7 +349,7 @@ footer {
     text-align: center;
     border: 2px solid black;
     grid-row: 1/2;
-    /* margin: ; */
+    margin: 20px;
 }
 
 .demographics h2 {
@@ -360,14 +362,16 @@ footer {
     background-color: var(--primary-color);
     color: var(--accent2-color);
     font-family: var(--paragraph-font);
-    text-align: center;
     border: 2px solid black;
     grid-row: 4/6;
+    margin: 20px;
+    padding:5px;
 }
 
 .attractions h2 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
+    text-align: center;
 }
 
 .calendar-card {
@@ -424,7 +428,7 @@ footer {
     /* justify-self: center; */
     text-align: center;
     background-color: var(--primary-color);
-    margin: 5px;
+    margin: 20px;
 }
 
 #discover_images {

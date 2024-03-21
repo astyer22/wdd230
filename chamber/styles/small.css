@@ -1,5 +1,5 @@
 @media screen and (min-width: 400px) {
-    main{
+    #home-main{
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -36,5 +36,15 @@
     #pokéMart, #smile {
         height: 200px;
         width: 200px;
+    }
+
+    /* discover page */
+
+    #discover-main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #discover-images, #demographics, #calander, #attractions{
+        grid-column: 1/2;
     }
 }

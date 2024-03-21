@@ -27,4 +27,23 @@
         grid-row: 8/12;
     }
 
+    #demographics {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #calander-card {
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+    #attractions {
+        grid-column: 1/2;
+        grid-row: 4/6;
+    }
+
+    #discover-images {
+        grid-column: 1/2;
+        grid-row: 6/10;
+    }
 }

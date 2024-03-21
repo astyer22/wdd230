@@ -77,17 +77,26 @@ function calculateWindChill(temperature, windSpeed) {
 document.addEventListener("DOMContentLoaded", function () {
     const calendarDiv = document.getElementById("calendar");
     const currentDate = new Date();
-    const currentMonth = currentDate.toLocaleString('default', { month: 'long' }); // Get current month as string
+    const currentMonth = currentDate.getMonth(); // Get current month index (0-11)
     const currentYear = currentDate.getFullYear(); // Get current year
+    const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay(); // Get index of the first day of the month (0-6)
+
+    // Get total number of days in the current month
+    const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+    // Calculate total number of days to display including days from previous and next month
+    const totalDaysToDisplay = daysInMonth + firstDayOfMonth;
+
+    // Calculate total number of rows needed to display all days in a perfect square
+    const totalRows = Math.ceil(totalDaysToDisplay / 7);
 
     // Function to generate calendar
     function generateCalendar() {
-        const daysInMonth = 30; // Assuming 30 days for simplicity
         const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
         // Display current month and year
         const monthYearHeader = document.createElement("h3");
-        monthYearHeader.textContent = `${currentMonth} ${currentYear}`;
+        monthYearHeader.textContent = `${currentDate.toLocaleString('default', { month: 'long' })} ${currentYear}`;
         calendarDiv.appendChild(monthYearHeader);
 
         // Display days of the week
@@ -101,43 +110,47 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         calendarDiv.appendChild(weekRow);
 
-        for (let i = 1; i <= daysInMonth; i++) {
-            const dayDiv = document.createElement("div");
-            dayDiv.classList.add("day");
-            dayDiv.textContent = i;
+        let dayCounter = 1 - firstDayOfMonth; // Counter for days in the current month
 
-            // Highlight current date
-            if (i === currentDate.getDate()) {
-                dayDiv.classList.add("current-day");
+        // Loop through each row
+        for (let row = 0; row < totalRows; row++) {
+            const weekRow = document.createElement("div");
+            weekRow.classList.add("week");
+
+            // Loop through each day of the week
+            for (let col = 0; col < 7; col++) {
+                const dayDiv = document.createElement("div");
+                dayDiv.classList.add("day");
+
+                // Calculate the day number to display
+                const dayNumber = dayCounter + (row * 7) + col;
+
+                if (dayNumber > 0 && dayNumber <= daysInMonth) {
+                    dayDiv.textContent = dayNumber;
+
+                    // Highlight current date
+                    if (dayNumber === currentDate.getDate() && currentMonth === currentDate.getMonth() && currentYear === currentDate.getFullYear()) {
+                        dayDiv.classList.add("current-day");
+                    }
+                } else {
+                    dayDiv.classList.add("inactive-day");
+                }
+
+                // Check if the day is Wednesday
+                const dayOfWeek = (col + 1) % 7; // Adjust the index to start from Sunday
+                if (dayOfWeek === 3) { // Wednesday
+                    dayDiv.classList.add("meeting-day");
+                }
+
+                weekRow.appendChild(dayDiv);
             }
 
-            // Check if the day is Wednesday
-            const dayOfWeek = new Date(currentYear, currentDate.getMonth(), i).getDay();
-            if (dayOfWeek === 3) { // Wednesday
-                dayDiv.classList.add("meeting-day");
-            }
-
-            dayDiv.addEventListener("click", function () {
-                toggleEvent(dayDiv);
-            });
-            calendarDiv.appendChild(dayDiv);
-        }
-    }
-
-    // Function to toggle event on a day
-    function toggleEvent(dayDiv) {
-        if (dayDiv.querySelector(".event")) {
-            dayDiv.removeChild(dayDiv.querySelector(".event"));
-        } else {
-            const eventDiv = document.createElement("div");
-            eventDiv.classList.add("event");
-            dayDiv.appendChild(eventDiv);
+            calendarDiv.appendChild(weekRow);
         }
     }
 
     generateCalendar();
 });
-
 
 
 // Assume you have functions to get current temperature and wind speed from the page
