@@ -381,6 +381,11 @@ footer {
     text-align: center;
 }
 
+.label {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}   
+
 picture {
     grid-column: 2/3;
 }
