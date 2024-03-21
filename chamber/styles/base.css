@@ -394,7 +394,6 @@ footer {
 }
 
 
-
 /* Join Page */
 #join-main h1 {
     color: #000;
@@ -402,7 +401,7 @@ footer {
 }
 
 /* Form */
-.join-main {
+#join-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -412,7 +411,7 @@ footer {
     width: 100%;
     margin-bottom: 20px;
     margin-top: 20px;
-    grid-column: 2/4;
+    grid-column: 1/4;
 }
 
 .join h2 {
