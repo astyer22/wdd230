@@ -1,25 +1,19 @@
 // View buttons
-function setupViewButtons() {
-    const gridbutton = document.querySelector("#grid");
-    const listbutton = document.querySelector("#list");
-    const display = document.querySelector("cards");
+const gridbutton = document.querySelector("#grid");
+const listenbutton = document.querySelector("#list");
+const cards = document.querySelector("#cards");
 
-    if (gridbutton && listbutton && display) {
-        gridbutton.addEventListener("click", () => {
-            display.classList.add("grid");
-            display.classList.remove("list");
-        });
+gridbutton.addEventListener("click", () => {
+    cards.classList.add("grid");
+    cards.classList.remove("list");
+});
 
-        listbutton.addEventListener("click", () => {
-            display.classList.add("list");
-            display.classList.remove("grid");
-        });
-    } else {
-        console.error("One or more elements not found.");
-    }
+listenbutton.addEventListener("click", showList);
+
+function showList() {
+    cards.classList.add("list");
+    cards.classList.remove("grid");
 }
-
-document.addEventListener("DOMContentLoaded", setupViewButtons);
 
 // Directory Js for the chambers
 
@@ -36,7 +30,8 @@ const displayMembers = (members) => {
     members.forEach((member) => {
         const card = document.createElement("section");
         card.innerHTML = `
-            <h2>${member.name}</h2>
+            <hr>
+            <h4>${member.name}</h4>
             <p>${member.address}</p>
             <p>${member.phoneNumber}</p>
             <p>${member.membershipLevel}</p>

@@ -22,7 +22,7 @@
     <meta property="og:image" content="https://pokemon.fandom.com/wiki/Goldenrod_City">
     <meta property="og:url" content="https://astyer22.github.io/wdd230/chamber/index.html">
 </head>
-<body>
+<body id="directory-body">
     <header>
         <img id="city-logo_" src="images/goldenrod_city_logo_.webp" alt="goldenrod_city_Logo">
         <h1> Welcome to the  Goldenrod City Chamber of Commerce </h1>
@@ -44,13 +44,16 @@
     </nav>
 
     <main id="directory-main">
-        <div>        
-            <section class="menu">
-                <button id="grid">⏹️Grid</button>
-                <button id="list">📄List</button>
-            </section>
+        <div class="directory-menu"> 
+            <h2>Our Members</h2> 
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
         <hr>
-            <section id="cards" class="grid"></section>
+            <div id="cards">
+            </div>
+            <article class="grid">
+                <h3><a href="join.html" class="join-button">Join Here</a></h3>
+            </article>
         </div>
     </main>
 

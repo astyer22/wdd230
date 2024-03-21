@@ -543,40 +543,97 @@ footer {
 }
 
 /* dictory */
+
 #directory-main {
-    margin: 0 auto;
-    padding: 0.5rem;
-    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
 }
 
-.menu {
-    margin: 1rem auto;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
-    background-color: var(--primary-color);
+#directory-main h2 {
+    color: black;
+    border-bottom: #000;
     text-align: center;
 }
 
-.menu button {
-    padding: 1rem;
-    font-weight: 700;
+.directory-menu {
+    margin-top: 20px; /* Add margin for spacing */
 }
 
-#directory #cards {
-    background-color: var(--primary-color);
-    text-align: center;
+#directory-main h3, h4 {
+    color: black;
+    border: black solid 2px;
+    padding: 5px;
+    background-color: white;
 }
 
+/* Center the entire element */
+/* Add this CSS */
 .grid {
     display: grid;
-    /* grid-template-columns: 1fr  */
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Update to create more columns */
+    grid-gap: 20px; 
+    align-items: center;
+    justify-items: center; 
+    margin-bottom: 20px;
 }
 
-#cards img {
-    margin: 20px;
+.join-button {
+    display: grid;
+    padding: 10px 20px;
+    color: black; 
+    text-decoration: none;
+    border: 2px solid black; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    grid-column: 3; /* Assigning it to the third column */
+}
 
+
+.join-button:hover {
+    background-color: purple; 
+    color: white;
 }
 
 #cards {
-    gap: 20px;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px
+}
+
+/* chatgbt helped me figure this out */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    grid-gap: 20px; 
+    align-items: center;
+    justify-items: center; 
+    margin-bottom: 20px;
+}
+
+.grid img {
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list > * {
+    margin: 0 1rem;
+}
+
+.list img {
+    display: none;
+}
+
+.list:nth-child(even) {
+    background-color: #bed;
+}
+
+#directory-body {
+    background-color: #ccc;
 }
