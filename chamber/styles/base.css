@@ -261,7 +261,7 @@ h2 {
     color: var(--accent2-color);
     border: 2px solid black;
     grid-column: 1;
-    grid-row: 8/10;
+    grid-row: 6/10;
     margin: 10px;
     text-align: center;
 }
@@ -352,7 +352,6 @@ footer {
 
 .attractions {
     grid-column: 1/2;
-    grid-row:  ;
     background-color: var(--primary-color);
     color: var(--accent2-color);
     font-family: var(--paragraph-font);
