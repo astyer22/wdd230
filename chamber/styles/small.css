@@ -1,6 +1,6 @@
 @media screen and (min-width: 400px) {
     main{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(, 1fr);
     }
 
     /* sections */
@@ -11,24 +11,19 @@
         text-align: center;
     }
 
-    .calander-card {
+    .our_businesses-card {
         grid-column: 1/3;
         grid-row: 10/12;
     }
     
-    .our_businesses-card {
-        grid-column: 1/3;
-        grid-row: 12/14;
-    }
-    
     .business_of_the_month {
-        grid-column: 2/3;
-        grid-row: 14/16;
+        grid-column: 2/4;
+        grid-row: 12/14;
     }
 
     .spotlight-card {
         grid-column: 1/2;
-        grid-row: 14/16;
+        grid-row: 12/14;
     }
 
     .join {
