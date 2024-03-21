@@ -30,10 +30,11 @@ header {
     font-family: var(--heading-font);
 }
 
-main {
+#home-main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 100%;
+    font-size: x-large;
 
 }
 
@@ -259,20 +260,12 @@ h2 {
     background-color: #03556e;
     color: var(--accent2-color);
     border: 2px solid black;
-    grid-column: 1/2;
+    grid-column: 1;
     grid-row: 8/10;
-    margin: 10px
+    margin: 10px;
+    text-align: center;
 }
 
-.calander-card {
-    background-color: var(--primary-color);
-    /* color: var(--accent2-color); */
-    border: 2px solid black;
-    grid-column: 1/2;
-    grid-row: 10/12;
-    text-align: center;
-    margin: 10px
-}
 
 .our_businesses-card {
     background-color: var(--primary-color);
@@ -291,8 +284,8 @@ h2 {
 
 .business_of_the_month {
     background-color: var(--primary-color);
-    /* color: var(--accent2-color); */
-    /* grid-column: 3/4; */
+    color: var(--accent2-color);
+    grid-column: 4/5;
     grid-row: 8/16;
     border: black solid 2px;
     text-align: center;
@@ -302,7 +295,7 @@ h2 {
 .spotlight-card {
     background-color: var(--primary-color);
     /* color: var(--accent2-color); */
-    /* grid-column: 4/5; */
+    grid-column: 2/4;
     grid-row: 8/16;
     border: black solid 2px;
     text-align: center;
@@ -338,13 +331,10 @@ footer {
 
 /* Discover page */
 
-/* 
-.body{
-   
-} */
-.discover-main {
+#discover-main {
     display: grid;
-    grid-template-columns: 1fr 3%;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .demographics {
@@ -362,6 +352,7 @@ footer {
 
 .attractions {
     grid-column: 1/2;
+    grid-row:  ;
     background-color: var(--primary-color);
     color: var(--accent2-color);
     font-family: var(--paragraph-font);
@@ -373,27 +364,40 @@ footer {
     color: var(--secondary-color);
 }
 
-#discover-main p {
+.calander-card {
+    background-color: var(--primary-color);
+    /* color: var(--accent2-color); */
+    border: 2px solid black;
+    grid-column: 1/2;
+    grid-row: 10/12;
+    text-align: center;
+    margin: 10px
+}
+
+
+/* #discover-main p {
     grid-column: 1/2;
     background-color: var(--primary-color);
     color: var(--accent2-color);
     font-family: var(--paragraph-font);
     text-align: center;
-}
+} */
 
 .label {
     font-family: var(--heading-font);
     color: var(--secondary-color);
-}   
+}
 
-picture {
+#discover_images {
     grid-column: 2/3;
+    grid-row: 1;
+    
 }
 
 
 
 /* Join Page */
-main h1 {
+#join-main h1 {
     color: #000;
     grid-column: 2;
 }
@@ -491,7 +495,7 @@ main h1 {
 }
 
 /* dictory */
-main {
+#directory-main {
     margin: 0 auto;
     padding: 0.5rem;
     max-width: 700px;
@@ -525,6 +529,6 @@ main {
 
 }
 
-section #cards {
+#cards {
     gap: 20px;
 }
