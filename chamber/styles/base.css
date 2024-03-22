@@ -30,14 +30,6 @@ header {
     font-family: var(--heading-font);
 }
 
-#home-main {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    width: 100%;
-    font-size: x-large;
-
-}
-
 h1 {
     text-align: center;
     grid-column: 2/4;
@@ -200,6 +192,13 @@ input:checked+.slider:before {
     /* Convert the images to black and white */
 }
 
+#home-main {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    width: 100%;
+    font-size: x-large;
+
+}
 
 /* Hero */
 #hero {
@@ -244,7 +243,6 @@ input:checked+.slider:before {
 
 #join:hover {
     opacity: 1;
-    /* On hover, set opacity to 1 (solid) */
 }
 
 /* Sections */
