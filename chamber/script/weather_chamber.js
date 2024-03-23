@@ -66,3 +66,21 @@ async function apiFetch() {
 apiFetch();
         
 
+// Function to update weather information
+function updateWeather() {
+    // Fetch temperature and wind speed values from the DOM
+    var currentTemperature = parseFloat(document.getElementById("temperature").textContent);
+    var currentWindSpeed = parseFloat(document.getElementById("windspeed").textContent);
+
+    // Calculate wind chill
+    var windChill = calculateWindChill(currentTemperature, currentWindSpeed);
+
+    // Display current temperature and wind chill
+    document.getElementById("current-temp").textContent = "Current Temp: " + currentTemperature + "°F";
+    document.getElementById("windchill").textContent = (windChill !== "N/A") ? windChill + "°F" : "N/A";
+}
+
+// Call updateWeather function when the page loads
+window.onload = function () {
+    updateWeather();
+};
