@@ -1,16 +1,18 @@
-@media screen and (min-width: 840px)
-{
-    main{
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr
+@media screen and (min-width: 840px) {
+    #home-main {
+        grid-template-columns: 1fr 1fr;
+        max-width: 80%;
+        margin: 0 auto;
+        justify-items: center;
+        font-size: 2rem
     }
-    
+
     #menu {
         display: none;
     }
 
     .navigation {
-		flex-direction: row;
+        flex-direction: row;
     }
 
     .navigation a {
@@ -27,22 +29,70 @@
     .our_businesses-card {
         grid-column: 1/2;
         grid-row: 8/9;
+        width: 70%;
     }
 
     .business_of_the_month {
-        grid-column:4/5 ;
+        grid-column: 2/3;
         grid-row: 10/14;
     }
 
     .spotlight-card {
-        grid-column: 4/5;
+        grid-column: 2/3;
         grid-row: 8/10;
     }
 
-/* directory */
+
+    /* discover */
+    #discover-main{
+    grid-template-columns: 1fr 1fr;
+    }
+
+    #discover_images {
+        grid-column: 2/3;
+        grid-row: 1/6;
+    }
+
+    /* directory */
+
+    /* chatgbt helped me figure this out */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    grid-gap: 20px; 
+    align-items: center;
+    justify-items: center; 
+    margin: 20px;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px
+}
+
+.grid img {
+    /* width: 100%; 
+    height: 400px;  */
+    object-fit: cover; 
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list > * {
+    margin: 0 1rem;
+}
+
+.list img {
+    display: none;
+}
+
+.list:nth-child(even) {
+    background-color: #bed;
+}
+/* 
     .grid img {
         width: 250px;
         height: 250px
-    }
+    } */
 }
-

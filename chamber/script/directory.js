@@ -1,7 +1,7 @@
 // View buttons
 const gridbutton = document.querySelector("#grid");
 const listenbutton = document.querySelector("#list");
-const cards = document.querySelector("#cards");
+const cards = document.querySelector(".grid");
 
 gridbutton.addEventListener("click", () => {
     cards.classList.add("grid");
@@ -26,7 +26,6 @@ async function getMemberData() {
 }
 
 const displayMembers = (members) => {
-    const cards = document.getElementById("cards");
     members.forEach((member) => {
         const card = document.createElement("section");
         card.innerHTML = `

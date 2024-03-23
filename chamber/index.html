@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="styles/base.css">
 <link rel="stylesheet" href="styles/small.css">
 <link rel="stylesheet" href="styles/medium.css">
-<!-- <link rel="stylesheet" href="styles/larger.css"> -->
+<link rel="stylesheet" href="styles/larger.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway&display=swap">
 <link rel="icon" href="images/chamber_favicon.ico">
 
@@ -43,7 +43,7 @@
     
     </nav>
 
-    <main id="home-main">
+    <main>
 
         <div id="hero">
             <picture>
@@ -56,78 +56,88 @@
         </div>
 
     
+        <div id="home-main">
+            <section class="weather-card">
+                <h2>Today's temperature in Goldenrod City (Chiba, Japan) is</h2>
+                <section id="current-temp">
+                    <figure>
+                        <h3>Current Temp:</h3>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </section>
+                <p id="weather-description"></p> <!-- Added this line -->
+                <p>Wind Speed: <span id="windspeed">6</span> mph</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+    
+                <hr>
+    
+                <section class="forecast">
+                    <h3>Here is a three day forcast of Goldenrod City</h3>
+                    <div id=".forcast"></div>
+                </section>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <img id="weather-pokemon" src="images/weather-pokemon.webp" alt="weather-pokemon">
+
+            </section>
+    
+            <section class="our_businesses-card">
+                <h2>Our Members</h2>
+                    <p>Pokémon Center</p> <br> 
+                    <p>Pokém Mart</p> <br>
+                    <p>The Pokemon Contest</p> <br>
+                    <p>Pokemon Gym</p> <br>
+                    <p>Pokemon Battle Tower</p> <br>    
+            </section>
+    
+            <section class="spotlight-card">
+                <h2>Buisness Spotlights</h2>
+                <p>The Pokemon Center held a food drive this last Saturday for all the Pokémone Trainers, thanks guys!</p> <br>
+                <hr>
+                <p>Gym leader Whitney's normal type Pokémon Battling Workshop was a success. Get out there trainers and fight!</p> <br>
+                <hr>
+                <p>The Pokemon Contest Group is holding the 25th annual Goldrod Poke Contest this Sunday. Winners will be sent to the Capital to compete in the finals.</p> <br>
+                <hr>
+                <p>The battle tower is still currently undefeated for the time being, who will be the greatest of all?!?!</p> <br>
+                <hr>
+                <p>Thank you name changer for holding The Free Name Changer Clinic last Tuesday. You helped a ton of new and old trainers!</p> <br>
+                <hr>
+                <p>The Pokémon Accademy is holding graduation in 2 weeks. If you want tickets, now is the time.</p> 
+                <hr>
+                <p>The Poké Food Court did a great job catering the Ketchem's Wedding. If you are interested reachout to Mike.</p>
+    
+            </section>
+    
+            <section class="business_of_the_month">
+                <h2>Business of the Month</h2>
+                <p>Voted by the community, Poké Mart is the business of the month.</p>
+                <br>
+                <img id="pokéMart" src="images/poke_mart.webp" alt="pokéMart">
+    
+                <p>🌟 To Our Incredible Customers 🌟</p>
+    
+                <p>While we didn't clinch the title of "Business of the Month," your unwavering support means the world to us. Each day, we strive to make your PokéMart experience unforgettable. Your smiles fuel our passion. Thank you for being part of our family. Here's to many more adventures together!</p>
+                
+                <p>With gratitude,
+                Manager Rick
+                PokéMart 🛒</p>
+    
+                <img id="potion" src="images/potions.webp" alt="potions" loading="lazy">
+    
+                <hr>
+    
+                <p>For next months submition please send your votes to the Chamber of Commerce's email. Which is GoldenrodCityChambers@outlook.com </p>
+    
+              <img id="smile" src="images/smilies.webp" alt="smile" loading="lazy">
+    
+            </section>
+        </div>    
         
-        <section class="weather-card">
-            <h2>Today's temperature in Goldenrod City (Chiba, Japan) is</h2>
-            <section id="current-temp">
-                <figure>
-                    <h3>Current Temp:</h3>
-                    <img id="weather-icon" src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
-            </section>
-            <p id="weather-description"></p> <!-- Added this line -->
-            <p>Wind Speed: <span id="windspeed">6</span> mph</p>
-            <p>Wind Chill: <span id="windchill"></span></p>
-
-            <hr>
-
-            <section class="forecast">
-                <h3>Here is a three day forcast of Goldenrod City</h3>
-                <div id=".forcast"></div>
-            </section>
-        </section>
-
-        <section class="our_businesses-card">
-            <h2>Our Members</h2>
-                <p>Pokémon Center</p> <br> 
-                <p>Pokém Mart</p> <br>
-                <p>The Pokemon Contest</p> <br>
-                <p>Pokemon Gym</p> <br>
-                <p>Pokemon Battle Tower</p> <br>    
-        </section>
-
-        <section class="spotlight-card">
-            <h2>Buisness Spotlights</h2>
-            <p>The Pokemon Center held a food drive this last Saturday for all the Pokémone Trainers, thanks guys!</p> <br>
-            <hr>
-            <p>Gym leader Whitney's normal type Pokémon Battling Workshop was a success. Get out there trainers and fight!</p> <br>
-            <hr>
-            <p>The Pokemon Contest Group is holding the 25th annual Goldrod Poke Contest this Sunday. Winners will be sent to the Capital to compete in the finals.</p> <br>
-            <hr>
-            <p>The battle tower is still currently undefeated for the time being, who will be the greatest of all?!?!</p> <br>
-            <hr>
-            <p>Thank you name changer for holding The Free Name Changer Clinic last Tuesday. You helped a ton of new and old trainers!</p> <br>
-            <hr>
-            <p>The Pokémon Accademy is holding graduation in 2 weeks. If you want tickets, now is the time.</p> 
-            <hr>
-            <p>The Poké Food Court did a great job catering the Ketchem's Wedding. If you are interested reachout to Mike.</p>
-
-        </section>
-
-        <section class="business_of_the_month">
-            <h2>Business of the Month</h2>
-            <p>Voted by the community, Poké Mart is the business of the month.</p>
-            <br>
-            <img id="pokéMart" src="images/poke_mart.webp" alt="pokéMart">
-
-            <p>🌟 To Our Incredible Customers 🌟</p>
-
-            <p>While we didn't clinch the title of "Business of the Month," your unwavering support means the world to us. Each day, we strive to make your PokéMart experience unforgettable. Your smiles fuel our passion. Thank you for being part of our family. Here's to many more adventures together!</p>
-            
-            <p>With gratitude,
-            Manager Rick
-            PokéMart 🛒</p>
-
-            <img id="potion" src="images/potions.webp" alt="potions" loading="lazy">
-
-            <hr>
-
-            <p>For next months submition please send your votes to the Chamber of Commerce's email. Which is GoldenrodCityChambers@outlook.com </p>
-
-          <img id="smile" src="images/smilies.webp" alt="smile" loading="lazy">
-
-        </section>
     </main>
 
     <footer>
