@@ -1,24 +1,23 @@
 @media screen and (min-width: 400px) {
     #home-main {
-        grid-template-columns: repeat(3, minmax(0, 1fr)); /* Adjusted grid-template-columns */
-        font-size: small;
+      grid-template-columns: 1fr;
     }
 
     /* sections */
 
     .weather-card {
-        grid-column: 1/4; /* Adjusted grid-column */
+        grid-column: 1/2; /* Adjusted grid-column */
         grid-row: 8/10;
         text-align: center;
     }
 
     .our_businesses-card {
-        grid-column: 1/4; /* Adjusted grid-column */
+        grid-column: 1/2; /* Adjusted grid-column */
         grid-row: 10/12;
     }
     
     .business_of_the_month {
-        grid-column: 2/4; /* Adjusted grid-column */
+        grid-column: 1/2; /* Adjusted grid-column */
         grid-row: 12/14;
     }
 

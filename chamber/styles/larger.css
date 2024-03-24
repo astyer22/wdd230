@@ -1,11 +1,13 @@
 @media screen and (min-width: 840px) {
     #home-main {
         grid-template-columns: 1fr 1fr;
-        max-width: 80%;
+        /* max-width: 80%; */
         margin: 0 auto;
         justify-items: center;
-        font-size: 2rem
+        font-size: rem
     }
+
+
 
     #menu {
         display: none;
@@ -29,8 +31,7 @@
     .our_businesses-card {
         grid-column: 1/2;
         grid-row: 8/9;
-        width: 70%;
-    }
+    } 
 
     .business_of_the_month {
         grid-column: 2/3;

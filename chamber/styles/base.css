@@ -35,7 +35,7 @@ h1 {
     grid-column: 2/4;
     color: var(--secondary-color);
     font-family: var(--heading-font);
-    font-size: 4rem
+    font-size: 2rem
 }
 
 #city-logo {
@@ -206,11 +206,11 @@ input:checked+.slider:before {
 /* Hero */
 #hero {
     position: relative;
-    /* grid-column: 1/5;
-    grid-row: 2/5; */
-    /* display: flex;
+     grid-column: 1/5;
+    grid-row: 2/5; 
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center; 
     border: 2px solid black;
     padding: 10px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
@@ -295,6 +295,7 @@ h2 {
     text-align: center;
     margin: 10px;
     padding: 10px;
+
 }
 
 .spotlight-card {
@@ -310,6 +311,7 @@ h2 {
 
 #weather-pokemon {
     border: #000 solid 3px;
+    width: 300px;
 }
 
 /* Footer */
