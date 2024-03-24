@@ -19,12 +19,12 @@
     }
     
     .business_of_the_month {
-        grid-column: 4/5;
+        grid-column: 2/3;
         grid-row: 10/14;
     }
 
     .spotlight-card {
-        grid-column: 3/5;
+        grid-column: 2/3;
         grid-row: 8/10;
     }
 
