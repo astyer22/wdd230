@@ -3,8 +3,8 @@
         grid-template-columns: 1fr 1fr;
         /* max-width: 80%; */
         margin: 0 auto;
-        justify-items: center;
-        font-size: rem
+        /* justify-items: center; */
+        font-size: 2rem;
     }
 
 
@@ -25,7 +25,7 @@
     .weather-card {
         grid-column: 1/2;
         grid-row: 9/14;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .our_businesses-card {
